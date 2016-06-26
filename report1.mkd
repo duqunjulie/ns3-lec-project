@@ -1,0 +1,13 @@
+#实验报告
+学生姓名：杜群     学 号：2013010907027
+##一
+当我输入姓名为duqun 学号为2013010907027 输出次数为7时，得到的结果如图
+是以hello-simulator为例对程序进行修改，在原有name的基础上，将学号num以string的形式也输出来，定义了一个新的变量freq用来表示输出的频率
+![jieguo1](http://ww4.sinaimg.cn/mw1024/005xCPTEgw1f4rc49wjl3j30k907bjvc.jpg)
+##二
+利用wc对输出的总次数进行统计，因为freq输入为7，所以wc所计数值也为7
+![jieguo2](http://ww2.sinaimg.cn/mw1024/005xCPTEgw1f4rcjc4mwbj30jx02yq4q.jpg)
+
+##三
+利用grep进行筛选，我这里选取的筛选值为+5，所输出的便是在第6秒输出的内容，也就是+5000000000.0ns输出的内容
+![jieguo3](http://ww3.sinaimg.cn/mw1024/005xCPTEgw1f4rcjcamu5j30k603jq5c.jpg)
