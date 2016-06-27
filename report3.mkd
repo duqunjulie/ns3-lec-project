@@ -1,0 +1,46 @@
+#实验报告
+##1、系统日志信息截图
+###通过设置改变NS_LOG的日志级别后的输出结果
+![project3.1](http://ww3.sinaimg.cn/mw1024/005xCPTEgw1f58lwhopgcj30k30bjn3c.jpg)
+![project3.1-2](http://ww2.sinaimg.cn/mw1024/005xCPTEgw1f58lwi92gzj30k309iwkh.jpg)
+###通过NS_LOG中的prefix|func来得到日志消息是由哪个方法产生的
+![project3.1-3](http://ww2.sinaimg.cn/mw1024/005xCPTEgw1f58lwjaz9pj30jx0bnjyi.jpg)
+###启用echo看到来自echo客户端和服务器的所有消息
+![project3.1-4](http://ww1.sinaimg.cn/mw1024/005xCPTEgw1f58lwkx4r7j30k20bzqan.jpg)
+###通过prefix_time知道仿真时间
+![proect3.1-5](http://ww1.sinaimg.cn/mw1024/005xCPTEgw1f58lwl8qk4j30k10c2wmr.jpg)
+##2、PyViz截图
+因为两个p2p节点的位置是一样的，所以这里没有只显示了一个重合的节点
+![project3.pyviz1]( http://ww3.sinaimg.cn/mw1024/005xCPTEgw1f59ue6s1pqj30g40dgjrn.jpg)
+![project3.pyviz2]( http://ww2.sinaimg.cn/mw1024/005xCPTEgw1f59ue8cr12j30g90as0t2.jpg)
+##3、Wireshark查看文件的截图
+![project3-wire](http://ww3.sinaimg.cn/mw1024/005xCPTEgw1f58lwlntqhj30kp0efwjv.jpg)
+##4、利用Gnuplot处理数据形成表格
+我测试的是改变数据包的大小看收发之间的时间差有什么变化，可见数据包越大，中间需要的时间越长
+![gnuplot1]( http://a1.qpic.cn/psb?/V12HWE5114cAlD/fB3FDIbJzDT7RTyeJNpPwKcQRdGMlQ83CdZHipZTmFI!/c/dLAAAAAAAAAA&ek=1&kp=1&pt=0&bo=hQLsAQAAAAADB0g!&sce=60-2-2&rf=newphoto&t=5)
+##5、步骤文档
+### gnuplot
+1、先安装x11：
+Sudo apt-get install libx11-dev
+2、下载gnuplot的安装包，网站：
+http://nchc.dl.sourceforge.net/project/gnuplot/gnuplot/4.4.0/gnuplot-4.4.0.tar.gz
+3、放到一个文件夹中，进入那个文件夹
+4、解压文件
+  tar –zxvf gnuplot-4.4.0.tar.gz
+5、配置安装路径
+      cd gnuplot-4.4.0
+       ./configure
+6、编译
+       make
+7、.安装
+       make install
+###wireshark
+直接输入 apt-get install wireshark
+###pyviz
+1、 在http://code.nsnam.org/gjc/ns-3.9-pyviz/​下载pyviz软件包
+2、 解压后放在/home/ns-allinone-3.22/ns-3.22
+3、 重新编译如下命令：
+$ ./waf clean
+$ ./waf --build-profile=optimized --enable-examples --enable-tests configure​​
+4、 用如下命令可以测试是否安装成功：
+./waf --pyrun src/flow-monitor/examples/wifi-olsr-flowmon.py --vis
