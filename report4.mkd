@@ -1,0 +1,10 @@
+#实验报告
+##网络拓扑：
+![project4.5]( http://ww4.sinaimg.cn/mw1024/005xCPTEgw1f5i4q443t5j30jg054dgm.jpg)
+##PyViz截图
+![project4.1]( http://ww2.sinaimg.cn/mw1024/005xCPTEgw1f5i1q2hb10j30k40brtam.jpg)
+![project4.2]( http://ww4.sinaimg.cn/mw1024/005xCPTEgw1f5i1q6ihp0j30k50anjt2.jpg)
+##利用Gnuplot处理数据形成表格
+我是改变数据包的大小来看传送时间的变化，可见数据包越大，传送时间越长
+MATLAB没有装好，所以依然用gnuplot来画图
+![project4.4]( http://ww1.sinaimg.cn/mw1024/005xCPTEgw1f5i1qau5v0j30h70cnjrq.jpg) 
